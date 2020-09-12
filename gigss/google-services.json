@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "962129844507",
+    "firebase_url": "https://gigss-d72a2.firebaseio.com",
+    "project_id": "gigss-d72a2",
+    "storage_bucket": "gigss-d72a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962129844507:android:b3d6b6317b8a8722795bbe",
+        "android_client_info": {
+          "package_name": "com.companyname.gigss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962129844507-d2gpese53vigm2epc3at2ulhtch26kj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.companyname.gigss",
+            "certificate_hash": "f4ecaa9b1ffc6efcab7329afb749718d848d55a5"
+          }
+        },
+        {
+          "client_id": "962129844507-robivnfcbk803bqrdgu0jni4echbgnpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaVh4GwlaLyPJsVj5scAEyPRVpn_bf7ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962129844507-robivnfcbk803bqrdgu0jni4echbgnpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
