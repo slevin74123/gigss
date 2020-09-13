@@ -3,16 +3,17 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
-using Firebase;
+using Firebase.Events;
 using Firebase.Database;
+using Firebase;
 
 namespace gigss
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
     public class MainActivity : AppCompatActivity
     {
-        Button connectTest;
         FirebaseDatabase database;
+        Button btntestConnection;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -20,21 +21,15 @@ namespace gigss
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            connectTest = (Button)FindViewById(Resource.Id.butonTest);
-            connectTest.Click += ConnectTest_Click;
+            btntestConnection = (Button)FindViewById(Resource.Id.butonTest);
+            btntestConnection.Click += BtntestConnection_Click;
         }
 
-        private void ConnectTest_Click(object sender, System.EventArgs e)
+        private void BtntestConnection_Click(object sender, System.EventArgs e)
         {
             Initializedatabase();
         }
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
         void Initializedatabase()
         {
             var app = FirebaseApp.InitializeApp(this);
@@ -54,9 +49,15 @@ namespace gigss
             {
                 database = FirebaseDatabase.GetInstance(app);
             }
-            DatabaseReference dbref = database.GetReference("UserSupport");
-            dbref.SetValue("Testdatabase");
-            Toast.MakeText(this, "success", ToastLength.Short).Show();
+            DatabaseReference dbref = database.GetReference("UserSupporttt");
+            dbref.SetValue("Ticket13");
+            Toast.MakeText(this, "Completed", ToastLength.Short);
+        }
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

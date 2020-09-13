@@ -6,12 +6,15 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
-    <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="crc64d700b7465052b51a.MainActivity">
+    <activity android:label="@string/app_name" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/MyTheme.Splash" android:name="crc64c35f46b562535559.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="crc64d700b7465052b51a.MainActivity" />
+    <activity android:label="@string/app_name" android:theme="@style/UberTheme" android:name="crc64829451ace94caad1.login" />
+    <activity android:label="@string/app_name" android:theme="@style/UberTheme" android:name="crc64829451ace94caad1.RegisterationActivity" />
     <service android:name="crc64a98abb514ffad9f1.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" />

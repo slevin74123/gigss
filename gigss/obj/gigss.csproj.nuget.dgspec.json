@@ -38,6 +38,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Refractored.Controls.CircleImageView": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.3, )"
@@ -53,6 +57,10 @@
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
+            },
+            "Xamarin.Firebase.Auth": {
+              "target": "Package",
+              "version": "[71.1605.4, )"
             },
             "Xamarin.Firebase.Database": {
               "target": "Package",

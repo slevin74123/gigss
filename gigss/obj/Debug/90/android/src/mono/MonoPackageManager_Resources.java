@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "gigss.dll" comes first in this list. */
 		"gigss.dll",
+		"Refractored.Controls.CircleImageView.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
@@ -41,12 +42,16 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.VersionedParcelable.dll",
 		"Xamarin.Android.Support.ViewPager.dll",
 		"Xamarin.Essentials.dll",
+		"Xamarin.Firebase.Auth.dll",
+		"Xamarin.Firebase.Auth.Interop.dll",
 		"Xamarin.Firebase.Common.dll",
 		"Xamarin.Firebase.Database.Collection.dll",
 		"Xamarin.Firebase.Database.Connection.dll",
 		"Xamarin.Firebase.Database.dll",
 		"Xamarin.Google.AutoValue.Annotations.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Flags.dll",
 		"Xamarin.GooglePlayServices.Tasks.dll",
 	};
 	public static String[] Dependencies = new String[]{
